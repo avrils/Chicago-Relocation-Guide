@@ -1,7 +1,9 @@
 # Chicago Relocation Guide
 
-## Link to the Project
- [Here] (https://public.tableau.com/app/profile/avril.serrao/viz/ChicagoRelocationGuide/HomePage)
+![image](https://github.com/user-attachments/assets/1ae281a9-806e-4e98-8423-9ec4f9548da8)
+
+# Link to the Dashboard  
+[Tableau Chicago Relocation Guide](https://public.tableau.com/app/profile/avril.serrao/viz/ChicagoRelocationGuide/HomePage)
 
 ## Table of Contents
 1. [Project Description](#project-description)
@@ -32,6 +34,14 @@ By analyzing datasets from public sources such as the Chicago City Government, t
 
 ## Data Sources
 The datasets used in this project are sourced from the **Chicago City Government** and other publicly available repositories. These datasets were processed and cleaned in Python to remove inconsistencies and ensure accuracy before visualization.
+
+[Download Datasets Here]
+
+[Chicago Crime Data](https://data.cityofchicago.org/Public-Safety/Crimes-2022/9hwr-2zxp/data)  
+[ChicagoBusData.xlsx](https://github.com/omkardabholkar/Tableau-Chicago-Relocation-Guide/files/14620101/ChicagoBusData.xlsx)  
+[ChicagoCabs.xlsx](https://github.com/omkardabholkar/Tableau-Chicago-Relocation-Guide/files/14620109/ChicagoCabs.xlsx)  
+[ChicagoRent.xlsx](https://github.com/omkardabholkar/Tableau-Chicago-Relocation-Guide/files/14620110/ChicagoRent.xlsx)  
+[ChicogoGovernmentEmployment.xlsx](https://github.com/omkardabholkar/Tableau-Chicago-Relocation-Guide/files/14620128/ChicogoGovernmentEmployment.xlsx)
 
 ## Data Analysis
 This project highlights crucial data cleaning and analysis steps to create actionable insights for potential Chicago residents. Using **Python**, I cleaned the raw data by reducing inconsistencies by 25%, improving the overall dataset quality for analysis.

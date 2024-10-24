@@ -1,2 +1,70 @@
-# Chicago-Relocation-Guide
-A Python and Tableau project guiding relocation decisions for Chicago residents based on data-driven insights.
+# Chicago Relocation Guide
+
+## Table of Contents
+1. [Project Description](#project-description)
+2. [Technologies Used](#technologies-used)
+3. [Features](#features)
+4. [Data Sources](#data-sources)
+5. [Data Analysis](#data-analysis)
+6. [Installation and Setup](#installation-and-setup)
+7. [Usage](#usage)
+8. [Project Status](#project-status)
+9. [Contact Information](#contact-information)
+
+## Project Description
+From November 2023 to December 2023, I developed the **Chicago Relocation Guide**, a comprehensive tool aimed at assisting individuals considering relocation to Chicago. This project focuses on streamlining key aspects of city life, helping users explore neighborhoods, commuting options, and career paths using data-driven insights. The project involved extensive data cleaning using Python, and the final output is an interactive Tableau dashboard designed to enable users to make informed decisions.
+
+By analyzing datasets from public sources such as the Chicago City Government, the project focuses on essential areas, including crime rates, job opportunities, housing affordability, and transportation efficiency. The result is a detailed, interactive guide that allows users to visualize safety, affordability, career prospects, and commuting details in an intuitive and engaging format.
+
+## Technologies Used
+- **Python (Pandas, NumPy)**: For data cleaning and transformation, ensuring the quality of data used in the analysis.
+- **Tableau**: To build a dynamic and interactive dashboard, visualizing the critical factors affecting relocation decisions.
+- **SQL**: Used for advanced querying to identify trends in neighborhoods regarding crime rates, housing costs, and job availability.
+- **Jupyter Notebooks**: For organizing the Python data analysis workflow and visualizations.
+
+## Features
+- **Data-Driven Insights**: Analyzes key aspects such as safety, housing affordability, commuting options, and employment trends in Chicago.
+- **Interactive Tableau Dashboard**: Features seven types of visualizations, including bar charts, scatter plots, and interactive maps, allowing users to filter and explore the data based on their needs.
+- **User-Friendly Interface**: Incorporates animations and filters in Tableau to make exploring complex datasets intuitive for non-technical users.
+
+## Data Sources
+The datasets used in this project are sourced from the **Chicago City Government** and other publicly available repositories. These datasets were processed and cleaned in Python to remove inconsistencies and ensure accuracy before visualization.
+
+**Data Files:**
+- Chicago Crime Data
+- ChicagoBusData.xlsx
+- ChicagoCabs.xlsx
+- ChicagoRent.xlsx
+- ChicagoGovernmentEmployment.xlsx
+
+You can download the datasets [here](#) or view them directly in the repository.
+
+## Data Analysis
+This project highlights crucial data cleaning and analysis steps to create actionable insights for potential Chicago residents. Using **Python**, I cleaned the raw data by reducing inconsistencies by 25%, improving the overall dataset quality for analysis.
+
+**Key Python Functions:**
+- `Pandas` for data manipulation and cleaning.
+- `NumPy` for statistical analysis.
+
+In addition, SQL was used to perform a detailed analysis of neighborhood crime rates and housing affordability. Below is a sample SQL query that was pivotal in identifying neighborhoods balancing affordability and safety:
+
+```sql
+-- SQL Snippet: Identifying affordable and safe neighborhoods
+SELECT 
+    n.name AS Neighborhood, 
+    AVG(c.rate) AS Average_Crime_Rate, 
+    AVG(h.price) AS Average_Housing_Price
+FROM 
+    neighborhoods n
+JOIN 
+    crime c ON n.id = c.neighborhood_id
+JOIN 
+    housing h ON n.id = h.neighborhood_id
+GROUP BY 
+    n.name
+HAVING 
+    AVG(c.rate) < (SELECT AVG(rate) FROM crime) 
+    AND AVG(h.price) < (SELECT AVG(price) FROM housing)
+ORDER BY 
+    Average_Housing_Price ASC, Average_Crime_Rate ASC
+LIMIT 10;

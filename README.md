@@ -1,5 +1,8 @@
 # Chicago Relocation Guide
 
+## Link to the Project
+ [Here] (https://public.tableau.com/app/profile/avril.serrao/viz/ChicagoRelocationGuide/HomePage)
+
 ## Table of Contents
 1. [Project Description](#project-description)
 2. [Technologies Used](#technologies-used)
@@ -29,15 +32,6 @@ By analyzing datasets from public sources such as the Chicago City Government, t
 
 ## Data Sources
 The datasets used in this project are sourced from the **Chicago City Government** and other publicly available repositories. These datasets were processed and cleaned in Python to remove inconsistencies and ensure accuracy before visualization.
-
-**Data Files:**
-- Chicago Crime Data
-- ChicagoBusData.xlsx
-- ChicagoCabs.xlsx
-- ChicagoRent.xlsx
-- ChicagoGovernmentEmployment.xlsx
-
-You can download the datasets [here](#) or view them directly in the repository.
 
 ## Data Analysis
 This project highlights crucial data cleaning and analysis steps to create actionable insights for potential Chicago residents. Using **Python**, I cleaned the raw data by reducing inconsistencies by 25%, improving the overall dataset quality for analysis.

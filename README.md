@@ -72,7 +72,7 @@ HAVING
 ORDER BY 
     Average_Housing_Price ASC, Average_Crime_Rate ASC
 LIMIT 10;
-
+```
 
 ## Installation and Setup
 No installation is required to view the Tableau dashboard. It can be accessed directly through the following link: [Tableau Chicago Relocation Guide](https://public.tableau.com/app/profile/omkardabholkar/viz/Chicago_17103078576530/HomePage).

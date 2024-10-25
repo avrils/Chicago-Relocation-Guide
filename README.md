@@ -75,7 +75,7 @@ LIMIT 10;
 ```
 
 ## Installation and Setup
-No installation is required to view the Tableau dashboard. It can be accessed directly through the following link: [Tableau Chicago Relocation Guide](https://public.tableau.com/app/profile/omkardabholkar/viz/Chicago_17103078576530/HomePage).
+No installation is required to view the Tableau dashboard. It can be accessed directly through the following link: [Tableau Chicago Relocation Guide](https://public.tableau.com/app/profile/avril.serrao/viz/ChicagoRelocationGuide/HomePage).
 
 ## Usage
 Navigate to the provided Tableau Public link to explore the interactive dashboard. The dashboard is designed to be intuitive, allowing users to filter and interact with the visualizations to gain insights into the various factors influencing the decision to relocate to Chicago.

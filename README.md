@@ -72,3 +72,17 @@ HAVING
 ORDER BY 
     Average_Housing_Price ASC, Average_Crime_Rate ASC
 LIMIT 10;
+
+
+## Installation and Setup
+No installation is required to view the Tableau dashboard. It can be accessed directly through the following link: [Tableau Chicago Relocation Guide](https://public.tableau.com/app/profile/omkardabholkar/viz/Chicago_17103078576530/HomePage).
+
+## Usage
+Navigate to the provided Tableau Public link to explore the interactive dashboard. The dashboard is designed to be intuitive, allowing users to filter and interact with the visualizations to gain insights into the various factors influencing the decision to relocate to Chicago.
+
+## Project Status
+This project was completed in December 2023. While the current version of the dashboard provides comprehensive insights into relocation considerations for Chicago, future updates may include additional data points or refined analyses based on user feedback and evolving data.
+
+## Contact Information
+For inquiries, suggestions, or contributions to this project, please feel free to reach out through my GitHub profile.
+
